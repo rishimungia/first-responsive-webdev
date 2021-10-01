@@ -1,0 +1,32 @@
+html {
+    --primary-color: #FFF;
+    --secondary-color: #FFF;
+    --font-color: #000;
+    --bg-color: #f4f4f4;
+    --heading-color: #212121;
+    --contrast-color: #121212;
+    --contrast-font: #FFF;
+    --shadow: rgba(0, 0, 0, 0.30);
+    --accent: #0097a7;
+    --accent-light: #56c8d8;
+    --accent-dark: #006978;
+}
+
+html[data-theme="dark"] {
+    --primary-color: #1f1f1f;
+    --secondary-color: #272727;
+    --font-color: #f4f4f4;
+    --bg-color: #121212;
+    --heading-color: #FFF;
+    --contrast-color: #FFF;
+    --contrast-font: #000;
+    --shadow: rgba(255, 255, 255, 0.30);
+}
+
+html.transition,
+html.transition *,
+html.transition *:before,
+html.transition *:after {
+  transition: all 750ms !important;
+  transition-delay: 0 !important;
+}

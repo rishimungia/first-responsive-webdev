@@ -1,0 +1,86 @@
+<html>
+
+<head>
+
+	<title>ReVamped</title>
+	
+	<!-- links to CSS files -->
+	<link rel="stylesheet" href="css\styles_common.css">
+	<link rel="stylesheet" href="css\color_scheme.css">
+	<link rel="stylesheet" href="css\styles_home.css">
+	
+	<!-- links to icons and fonts --> 
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link href='http://fonts.googleapis.com/css?family=Roboto:300' rel='stylesheet' type='text/css'>
+	<link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
+	
+	<!-- links to AOS library -->
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	
+	<!-- links to JS libraries -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+	<script src="scripts\snap-scroll.js"></script>
+	
+	<script type="text/javascript" src="scripts\common.js"></script>
+	<script type="text/javascript" src="scripts\home.js"></script>
+	
+</head>
+
+<body>
+
+<div class="plank" id="p1">
+	<h1 data-aos="fade-right">|Group of<br>Dumb<br>Engineers</h1>
+	<p data-aos="fade-right">We do what you can't.</p>
+</div>
+
+<div class="plank" id="p2">
+	<div class="graph" data-aos="fade-right"><canvas id="myChart" responsive="true" maintainAspectRatio="true"></canvas></div>
+	<h1 data-aos="fade-left">Get complete<br>Skill<br>Analysis.</h1> 
+	<p data-aos="fade-left">Some complex SQL Magic involved.</p>	
+</div>
+
+<div class="plank" id="p3">
+	<div class="image"></div>
+	<h1 data-aos="fade-right">Put your<br>Brains to<br>Work.</h1> 
+	<p data-aos="fade-right">Take the test now.</p>
+	<a href="quiz.html"><button data-aos="fade-right" class="test_button">TEST<i class="material-icons">chevron_right</i></button></a>
+</div>
+
+<div class="nav">
+	<span class="navbar-toggle">
+        <i class="material-icons">menu</i>
+    </span>
+	<a href="home.html" class="logo"><b><i>Re</i></b> Vamped</a></li>
+	<ul class="main-nav">
+		<li><a href="quiz.html">Test</a></li>
+		<li><a href="about.html">About</a></li>
+		<li><a href="#">Contact</a></li>
+	</ul>
+</div>
+
+<div class="footer">
+	<ul class="footer-links">
+		<li><a href="quiz.html">Test</a></li>
+		<li><a href="about.html">About</a></li>
+		<li><a href="#">Contact</a></li>
+	</ul>	
+	
+	<!--<div class="theme-switch-wrapper">
+		<em>Enable Dark Mode!</em>
+		<label class="theme-switch" for="checkbox">
+    		<input name="theme" type="checkbox" id="checkbox" />
+    		<div class="slider round"></div>
+  		</label>
+	</div>-->
+</div>
+
+<!-- AOS JS library -->
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>AOS.init({duration: 1200});</script>
+
+</body>
+
+<!--Designed by Rishi Mungia-->
+
+</html>

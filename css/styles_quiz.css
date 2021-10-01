@@ -1,0 +1,111 @@
+h1 {
+	font-size: 4em;
+	text-align: center;
+	padding-top: 120px;
+	color: var(--font-color);
+}
+
+/* question card css */
+.question-card {
+	width: 90%;
+	background: var(--secondary-color);
+	border-radius: 8px;
+	box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.30);
+	padding: 20px;
+	margin: 50 auto;
+	display: grid;
+}
+.question {
+	font-weight: bold;
+	margin-bottom: 15px;
+	color: var(--font-color);
+}
+.option {
+	display: block;
+	margin-bottom: 10px;
+	cursor: pointer;
+	position: relative;
+	padding-left: 35px;
+	color: var(--font-color);
+}
+.option input {
+	position: absolute;
+	opacity: 0;
+	cursor: pointer;
+}
+
+/* unchecked radio css */
+.radio {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: rgba(0, 0, 0, 0);
+  border: solid 2px var(--accent-light);
+  border-radius: 50%;
+}
+
+/* when the radio button is checked */
+.option input:checked ~ .radio {
+  background-color: rgba(0, 0, 0, 0);
+  border: 2px solid var(--accent);
+}
+
+/* create the indicator (the dot/circle - hidden when not checked) */
+.radio:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* show the indicator (dot/circle) when checked */
+.option input:checked ~ .radio:after {
+  display: block;
+}
+
+/* style the indicator (dot/circle) */
+.option .radio:after {
+ 	top: 2;
+	left: 2;
+	width: 12px;
+	height: 12px;
+	border-radius: 50%;
+	background: var(--accent);
+	border-width: 10px;
+}
+
+/* pagination css */
+.pagination {
+	display: inline-block;
+}
+
+.center {
+	text-align: center;
+}
+
+.pagination a {
+	color: var(--font-color);
+	float: left;
+	padding: 8px 16px;
+	text-decoration: none;
+}
+
+.pagination a.active {
+	background-color: var(--accent);
+	border-radius: 5px;
+	box-shadow: 0 0 20px 0px var(--accent-light);
+	color: white;
+}
+
+.pagination a:hover:not(.active) {
+	background-color: var(--accent-light);
+	color: white;
+}
+
+
+
+/* Responsive css for Mobile and Tablets*/
+@media screen and (orientation:portrait){
+	
+}
